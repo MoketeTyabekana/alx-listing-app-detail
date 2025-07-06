@@ -27,6 +27,14 @@ export const UI_TEXT={
         
     },
 
+    SEARCH:{
+        DESTINATION: 'Destination',
+        CHECK_IN: 'Check-in Date',
+        CHECK_OUT: 'Check-out Date',
+        GUESTS: 'Guests',
+        SEARCH: 'Search',
+    },
+
     ERROR_MESSAGES: {
         REQUIRED_FIELD: 'This field is required.',
         INVALID_EMAIL: 'Please enter a valid email address.',
@@ -35,5 +43,33 @@ export const UI_TEXT={
     SUCCESS_MESSAGES: {
         ITEM_ADDED: 'Item successfully added to cart.',
         ITEM_UPDATED: 'Item successfully updated.',
+    },
+
+    EXPLORE:{
+        APARTMENTS_IN_DUBAI: 'Apartments in Dubai',
+        APARTMENTS_IN_NEWYORK: 'Apartments in New York',
+        APARTMENTS_IN_SPAIN: 'Apartments in Spain',
+        APARTMENTS_IN_INDONESIA: 'Apartments in Indonesia',
+    },
+
+    COMPANY:{
+        ABOUT_US:'About Us',
+        BLOG:'Blog',
+        CAREER: 'Career',
+        CUSTOMERS:'Customers',
+        BRAND:'Brand',
+    },
+
+    HELP:{
+        SUPPORT: 'Support',
+        CANCEL_BOOKING: 'Cancel Booking',
+        REFUNDS_PROCESS: 'Refunds Process',
+    },
+
+    FOOTER: {
+        TERMS_OF_SERVICE: 'Terms of Service',
+        POLICY_SERVICE: 'Policy Service',
+        COOKIES_POLICY: 'Cookies Policy',
+        PARTNERS: 'Partners',
     },
 }
