@@ -1,72 +1,55 @@
-# Airbnb Clone – Project Structure & Tooling
+# ALX Listing App
 
-## Objective
+## Project Overview
 
-The objective of this milestone is to scaffold the Airbnb clone project by creating a basic Next.js app with the correct folder structure, TypeScript integration, and essential project configurations. By completing this milestone, you will set up the foundation needed to build the listing page, create reusable components, and establish a well-structured, maintainable codebase.
-
----
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The **ALX Listing App** is an Airbnb clone focused on building a robust and scalable listing page. The primary goal of this project is to establish a solid foundation using Next.js and TypeScript, enabling the development of reusable components and a maintainable codebase. This project demonstrates best practices in project structure, configuration, and modern tooling.
 
 ---
 
 ## Project Structure
 
-- `/pages` – Application routes and API endpoints
-- `/components` – Reusable React components
-- `/styles` – Global and modular CSS/SCSS files
-- `/public` – Static assets (images, icons, etc.)
-- `/types` – TypeScript type definitions
-- `/utils` – Utility functions and helpers
-- `/config` – Project configuration files
+- `/components` – Contains reusable React components used throughout the application.
+- `/interfaces` – Holds TypeScript interface/type definitions for consistent type safety.
+- `/constants` – Stores static values and configuration constants used across the app.
+- `/public/assets` – Contains static assets such as images and icons accessible by the app.
+
+Other important directories:
+- `/pages` – Application routes and API endpoints.
+- `/styles` – Global and modular CSS/SCSS files.
+- `/utils` – Utility functions and helpers.
+- `/config` – Project configuration files.
 
 ---
 
-## Tooling & Configuration
+## Getting Started
 
-- **TypeScript** – Type-safe development
-- **Next.js** – React framework for SSR and SSG
-- **ESLint & Prettier** – Code linting and formatting
-- **Jest/React Testing Library** – Unit and integration testing
-- **Environment Variables** – Managed via `.env.local`
+Follow these steps to run the project locally:
+
+1. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
 ---
 
-## Learn More
+## Goals
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) – learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) – an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) – your feedback and contributions are welcome!
+- Scaffold a Next.js app with TypeScript integration.
+- Establish a clear and maintainable folder structure.
+- Enable rapid development of the listing page and reusable UI components.
+- Integrate essential tools for linting, formatting, and testing.
 
 ---
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This project is for educational purposes as part of the ALX curriculum.
