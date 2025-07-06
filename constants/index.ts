@@ -11,6 +11,7 @@ export const UI_TEXT={
         SIGN_UP: 'Sign Up',
         MORE_INFO: 'More Info',
     },
+    
     CARD: {
         TITLE:'Item Title',
         PRICE_PER_NIGHT: 'Price',

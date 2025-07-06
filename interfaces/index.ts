@@ -1,7 +1,13 @@
 export interface CardProps {
   title: string
-  description: string
-  children?: React.ReactNode
+  price_perNight: string
+    city: string
+    image: string
+    bedrooms: number
+    bathrooms: number
+    number_of_guests: number
+    rating: number
+    features: string[]
 }
 
 export interface ButtonProps {
