@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardProps } from 'interfaces/index.ts'
+import { CardProps } from '@/interfaces'
 
 export const Card = ({ title, description, children }: CardProps) => (
   <div className="border p-4 rounded shadow-sm">

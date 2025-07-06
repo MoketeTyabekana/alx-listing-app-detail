@@ -1,5 +1,6 @@
 import React from 'react';
-import { ButtonProps } from 'interfaces/index.ts';
+import { ButtonProps } from '@/interfaces'
+
 
 export const Button = ({ label, onClick, type = 'button' }: ButtonProps) => (
   <button
