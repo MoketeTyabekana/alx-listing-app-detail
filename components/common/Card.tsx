@@ -1,5 +1,6 @@
 import React from 'react'
 import { CardProps } from '@/interfaces'
+import Image from 'next/image'
 
 export const Card = ({
   title,
@@ -14,7 +15,7 @@ export const Card = ({
   children,
 }: CardProps & { children?: React.ReactNode }) => (
   <div className="border p-4 rounded shadow-sm">
-    <img src={image} alt={title} className="w-full h-48 object-cover rounded mb-3" />
+    <Image src={image} alt={title} className="w-full h-48 object-cover rounded mb-3" />
     <h2 className="text-xl font-bold mb-1">{title}</h2>
     <div className="text-gray-600 mb-1">{city}</div>
     <div className="text-lg font-semibold mb-2">${price_perNight} / night</div>
