@@ -1,10 +1,6 @@
-module.exports = {
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
-  theme: {
-    extend: {},
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
   },
-    plugins: [],
-  }
+};
+export default config;
