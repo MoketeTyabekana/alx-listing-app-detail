@@ -1,5 +1,3 @@
-
-
 export const UI_TEXT={
     BUTTON: {
         SUBMIT: 'Submit',
@@ -72,4 +70,26 @@ export const UI_TEXT={
         COOKIES_POLICY: 'Cookies Policy',
         PARTNERS: 'Partners',
     },
+
+   
+    PROPERTY_CATEGORIES: [
+        { label: 'Rooms', icon: 'rooms' },
+        { label: 'Mansion', icon: 'mansion' },
+        { label: 'Countryside', icon: 'countryside' },
+        { label: 'Villa', icon: 'villa' },
+        { label: 'Tropical', icon: 'tropical' },
+        { label: 'New', icon: 'new' },
+        { label: 'Amazing pool', icon: 'pool' },
+        { label: 'Beach house', icon: 'beach-house' },
+        { label: 'Island', icon: 'island' },
+        { label: 'Camping', icon: 'camping' },
+        { label: 'Apartment', icon: 'apartment' },
+        { label: 'House', icon: 'house' },
+        { label: 'Lakefront', icon: 'lakefront' },
+        { label: 'Farm house', icon: 'farm-house' },
+        { label: 'Treehouse', icon: 'treehouse' },
+        { label: 'Cabins', icon: 'cabins' },
+        { label: 'Castles', icon: 'castles' },
+        { label: 'Lakeside', icon: 'lakeside', disabled: true },
+    ]
 }
