@@ -1,4 +1,5 @@
 
+
 export const UI_TEXT={
     BUTTON: {
         SUBMIT: 'Submit',
@@ -14,13 +15,15 @@ export const UI_TEXT={
     },
     CARD: {
         TITLE:'Item Title',
-        PRICE: 'Price',
+        PRICE_PER_NIGHT: 'Price',
         CITY: 'City',
         IMAGE: 'Image',
-        NUMBER_OF_BEDS: 'Number of Beds',
-        NUMBER_OF_BATHS: 'Number of Baths',
-        NUMBER_OF_PEOPLE: 'Number of People',
+        BEDROOMS: 'Bedrooms',
+        BATHROOMS: 'Bathrooms',
+        NUMBER_OF_GUESTS: 'Number of guests',
         RATING: 'Rating',
+        FEATURES:["Top Villa", "Self CheckIn", "Free Reschedule"],
+
         
     },
 
