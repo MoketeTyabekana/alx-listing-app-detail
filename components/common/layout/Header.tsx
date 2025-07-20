@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Search, Mail } from "lucide-react";
+import Logo from ".../public/asset/vector"
 
 import {
   Home,
@@ -68,7 +69,7 @@ export default function Header() {
           <div className="flex items-center justify-between gap-8">
             {/* Logo */}
             <div className="flex-shrink-0">
-                
+                <h1 className="text-3xl font-bold text-gray-900">alx</h1>
             </div>
 
             {/* Search Bar */}
