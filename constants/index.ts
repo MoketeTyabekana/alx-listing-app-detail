@@ -1,17 +1,27 @@
+export const BUTTON_TEXT = {
+  all: "All",
+  topVilla: "Top Villa",
+  freeReschedule: "Free Reschedule",
+  bookNowPayLater: "Book Now, Pay later",
+  selfCheckin: "Self CheckIn",
+  instantBook: "Instant Book",
+  filter: "Filter",
+  sortByHighestPrice: "Sort by: Highest Price",
+
+  submit: "Submit",
+  cancel: "Cancel",
+  delete: "Delete",
+  edit: "Edit",
+  addToCart: "Add to Cart",
+  viewCart: "View Cart",
+  showMore: "Show More",
+  signIn: "Sign In",
+  signUp: "Sign Up",
+  moreInfo: "More Info",
+};
+
+
 export const UI_TEXT={
-    BUTTON: {
-        SUBMIT: 'Submit',
-        CANCEL: 'Cancel',
-        DELETE: 'Delete',
-        EDIT: 'Edit',
-        ADD_TO_CART: 'Add to Cart',
-        VIEW_CART: 'View Cart',
-        SHOW_MORE: 'Show More',
-        SIGN_IN: 'Sign In',
-        SIGN_UP: 'Sign Up',
-        MORE_INFO: 'More Info',
-    },
-    
     CARD: {
         TITLE:'Item Title',
         PRICE_PER_NIGHT: 'Price',

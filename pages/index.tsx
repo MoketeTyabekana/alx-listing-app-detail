@@ -1,5 +1,6 @@
 import React from "react";
-import { BACKGROUND_IMAGE } from "@/constants/index";
+import { BACKGROUND_IMAGE, BUTTON_TEXT } from "@/constants/index";
+import Button from "@/components/common/Button";
 
 export default function Home() {
   return (
@@ -12,7 +13,42 @@ export default function Home() {
           <h1 className="text-6xl font-semibold mb-6">
             Find your favorite place here!
           </h1>
-          <p className="text-2xl">The best prices for over 2 million properties worldwide.</p>
+          <p className="text-2xl">
+            The best prices for over 2 million properties worldwide.
+          </p>
+        </div>
+
+        <Button
+          label={BUTTON_TEXT.signUp}
+          variant="primary"
+          onClick={() => console.log("Signed up")}
+          className="text-sm"
+        />
+      </section>
+
+      <section className=" flex gap-2 mt-10">
+        <div className=" flex-2/3 mr-2">
+          <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 ">
+            All
+          </button>
+          <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 ">
+            Top Villa
+          </button>
+          <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 ">
+            Free Reschedule
+          </button>
+          <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 ">
+            Book Now, Pay Later
+          </button>
+          <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 ">
+            Self CheckIn
+          </button>
+          <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 ">
+            Instant Book
+          </button>
+        </div>
+        <div className="flex-1/3">
+
         </div>
       </section>
     </main>

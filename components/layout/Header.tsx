@@ -1,5 +1,7 @@
 import { useState } from "react";
 import vector from "@/public/assets/Vector.png";
+import { BUTTON_TEXT } from "@/constants/index";
+import Button from "../common/Button";
 
 import {
   search,
@@ -161,9 +163,9 @@ export default function Header() {
             </div>
 
             {/* Auth Buttons */}
-            <div className="flex items-center gap-3">
-              <button className="bg-emerald-500 rounded-full px-4 py-2 text-white">Sign In</button>
-             <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 hover:bg-gray-800 hover:text-white">Sign Up</button>
+            <div className="flex items-center gap-6">
+              <Button label={BUTTON_TEXT.signIn} variant="primary" className="bg-emerald-500 rounded-full px-4 py-2 text-white hover:bg-emerald-800" />
+              <Button label={BUTTON_TEXT.signUp} variant="secondary" className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 hover:bg-gray-800 hover:text-white"/>
             </div>
           </div>
         </div>

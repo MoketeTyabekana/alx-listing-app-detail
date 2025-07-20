@@ -11,7 +11,11 @@ export interface CardProps {
 }
 
 export interface ButtonProps {
-  label: string
-  onClick?: () => void
-  type?: 'button' | 'submit' | 'reset'
+  label: string;
+  onClick?: () => void;
+  type?: "button" | "submit" | "reset";
+  variant?: "primary" | "secondary" | "danger";
+  className?: string;
+  icon?: React.ReactNode;
+  disabled?: boolean;
 }
