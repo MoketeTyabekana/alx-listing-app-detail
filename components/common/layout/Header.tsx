@@ -163,7 +163,7 @@ export default function Header() {
             {/* Auth Buttons */}
             <div className="flex items-center gap-3">
               <button className="bg-emerald-500 rounded-full px-4 py-2 text-white">Sign In</button>
-             <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200">Sign Up</button>
+             <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 hover:bg-gray-800 hover:text-white">Sign Up</button>
             </div>
           </div>
         </div>

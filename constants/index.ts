@@ -484,3 +484,5 @@ export interface PropertyProps {
 }
 
 
+
+export const BACKGROUND_IMAGE = "/assets/bg.png";
