@@ -1,10 +1,9 @@
-"use client"
-
 import { useState } from "react";
-import { Search, Mail } from "lucide-react";
-import Logo from ".../public/asset/vector"
+import vector from "@/public/assets/Vector.png";
 
 import {
+  search,
+  Mail,
   Home,
   Castle,
   Trees,
@@ -18,7 +17,9 @@ import {
   Building2,
   TreePine,
   BuildingIcon as Barn,
-} from "lucide-react"
+  Search,
+} from "lucide-react";
+import Image from "next/image";
 
 const accommodationTypes = [
   { id: "rooms", label: "Rooms", icon: Home },
@@ -38,20 +39,20 @@ const accommodationTypes = [
   { id: "treehouse", label: "Treehouse", icon: TreePine },
   { id: "cabins", label: "Cabins", icon: Home },
   { id: "castles", label: "Castles", icon: Castle },
-]
+];
 
 export default function Header() {
-  const [selectedType, setSelectedType] = useState("villa")
+  const [selectedType, setSelectedType] = useState("villa");
   const [searchData, setSearchData] = useState({
     location: "",
     checkIn: "",
     checkOut: "",
     people: "",
-  })
+  });
 
   const handleInputChange = (field: string, value: string) => {
-    setSearchData((prev) => ({ ...prev, [field]: value }))
-  }
+    setSearchData((prev) => ({ ...prev, [field]: value }));
+  };
 
   return (
     <header className="w-full">
@@ -59,7 +60,12 @@ export default function Header() {
       <div className="bg-emerald-500 text-white py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3">
           <Mail className="h-5 w-5" />
-          <span className="text-sm font-medium">Overseas trip? Get the latest information on travel guides</span>
+          <span className="text-sm font-medium">
+            Overseas trip? Get the latest information on travel guides
+          </span>
+          <button className="rounded-full bg-black text-white px-4 py-1 text-sm hover:bg-gray-900 transition ease-in-out 0.3s">
+            More Info
+          </button>
         </div>
       </div>
 
@@ -69,73 +75,95 @@ export default function Header() {
           <div className="flex items-center justify-between gap-8">
             {/* Logo */}
             <div className="flex-shrink-0">
-                <h1 className="text-3xl font-bold text-gray-900">alx</h1>
+              <Image
+                src="/assets/Vector.png"
+                alt="Vector icon"
+                width={70}
+                height={70}
+                className="cover"
+              />{" "}
             </div>
 
             {/* Search Bar */}
-            <div className="flex-1 max-w-4xl">
+            <div className="flex-1 max-w-4xl overflow-hidden">
               <div className="flex items-center bg-white border border-gray-300 rounded-full ">
                 <div className="flex-1 grid grid-cols-4 divide-x divide-gray-300">
                   {/* Location */}
                   <div className="px-6 py-3">
-                    <label className="block text-xs font-semibold text-gray-900 mb-1">Location</label>
+                    <label className="block text-xs font-semibold text-gray-900 mb-1">
+                      Location
+                    </label>
                     <input
                       type="text"
                       placeholder="Search for destination"
                       value={searchData.location}
-                      onChange={(e) => handleInputChange("location", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("location", e.target.value)
+                      }
                       className="w-full text-sm text-gray-600 placeholder-gray-400 border-0 p-0 focus:outline-none focus:ring-0"
                     />
                   </div>
 
                   {/* Check in */}
                   <div className="px-6 py-3">
-                    <label className="block text-xs font-semibold text-gray-900 mb-1">Check in</label>
+                    <label className="block text-xs font-semibold text-gray-900 mb-1">
+                      Check in
+                    </label>
                     <input
                       type="text"
                       placeholder="Add date"
                       value={searchData.checkIn}
-                      onChange={(e) => handleInputChange("checkIn", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("checkIn", e.target.value)
+                      }
                       className="w-full text-sm text-gray-600 placeholder-gray-400 border-0 p-0 focus:outline-none focus:ring-0"
                     />
                   </div>
 
                   {/* Check out */}
                   <div className="px-6 py-3">
-                    <label className="block text-xs font-semibold text-gray-900 mb-1">Check out</label>
+                    <label className="block text-xs font-semibold text-gray-900 mb-1">
+                      Check out
+                    </label>
                     <input
                       type="text"
                       placeholder="Add date"
                       value={searchData.checkOut}
-                      onChange={(e) => handleInputChange("checkOut", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("checkOut", e.target.value)
+                      }
                       className="w-full text-sm text-gray-600 placeholder-gray-400 border-0 p-0 focus:outline-none focus:ring-0"
                     />
                   </div>
 
                   {/* People */}
                   <div className="px-6 py-3">
-                    <label className="block text-xs font-semibold text-gray-900 mb-1">People</label>
+                    <label className="block text-xs font-semibold text-gray-900 mb-1">
+                      People
+                    </label>
                     <input
                       type="text"
                       placeholder="Add guest"
                       value={searchData.people}
-                      onChange={(e) => handleInputChange("people", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("people", e.target.value)
+                      }
                       className="w-full text-sm text-gray-600 placeholder-gray-400 border-0 p-0 focus:outline-none focus:ring-0"
                     />
                   </div>
                 </div>
 
                 {/* Search Button */}
-                <div className="pr-2">
-                
-                
-                
+                <div className="p-2 mr-3 bg-amber-400 rounded-full">
+                  <Search className="text-white" />
                 </div>
               </div>
             </div>
 
             {/* Auth Buttons */}
             <div className="flex items-center gap-3">
+              <button className="bg-emerald-500 rounded-full px-4 py-2 text-white">Sign In</button>
+             <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200">Sign Up</button>
             </div>
           </div>
         </div>
@@ -156,12 +184,14 @@ export default function Header() {
                 }`}
               >
                 <type.icon className="h-4 w-4" />
-                <span className="text-xs font-small whitespace-nowrap">{type.label}</span>
+                <span className="text-xs font-small whitespace-nowrap">
+                  {type.label}
+                </span>
               </button>
             ))}
           </div>
         </div>
       </div>
     </header>
-  )
+  );
 }
