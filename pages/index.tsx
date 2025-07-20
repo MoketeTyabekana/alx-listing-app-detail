@@ -1,6 +1,8 @@
 import React from "react";
 import { BACKGROUND_IMAGE, BUTTON_TEXT } from "@/constants/index";
 import Button from "@/components/common/Button";
+import Card from "@/components/common/Card"
+import { PROPERTYLISTINGSAMPLE } from "@/constants/index";
 
 export default function Home() {
   return (
@@ -27,7 +29,7 @@ export default function Home() {
       </section>
 
       <section className=" flex gap-2 mt-10">
-        <div className=" flex-2/3 mr-2">
+        <div className=" flex-2/3 flex justify-between">
           <button className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 ">
             All
           </button>
@@ -47,9 +49,24 @@ export default function Home() {
             Instant Book
           </button>
         </div>
-        <div className="flex-1/3">
+        <div className="flex-1/3"></div>
+      </section>
 
-        </div>
+      <section className="w-full  py-6 grid grid-cols-4 gap-4">
+        {PROPERTYLISTINGSAMPLE.map((property, index) => (
+  <Card
+    key={index}
+    title={property.name}
+    price_perNight={property.price}
+    city={property.address.city}
+    image={property.image}
+    bedrooms={Number(property.offers.bed)}
+    bathrooms={Number(property.offers.shower)}
+    number_of_guests={property.offers.occupants}
+    rating={property.rating}
+    features={property.category}
+  />
+))}
       </section>
     </main>
   );

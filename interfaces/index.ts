@@ -1,14 +1,15 @@
 export interface CardProps {
-  title: string
-  price_perNight: string
-    city: string
-    image: string
-    bedrooms: number
-    bathrooms: number
-    number_of_guests: number
-    rating: number
-    features: string[]
+  title: string;
+  price_perNight: number;
+  city: string;
+  image: string;
+  bedrooms: number;
+  bathrooms: number;
+  number_of_guests: string; // change to string if you want to allow "2-3"
+  rating: number;
+  features: string[];
 }
+
 
 export interface ButtonProps {
   label: string;
