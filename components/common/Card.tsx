@@ -14,6 +14,7 @@ export const Card = ({
   features,
   children,
 }: CardProps & { children?: React.ReactNode }) => (
+
   <div className="border p-4 rounded shadow-sm">
     <Image src={image} alt={title} className="w-full h-48 object-cover rounded mb-3" />
     <h2 className="text-xl font-bold mb-1">{title}</h2>
@@ -31,5 +32,6 @@ export const Card = ({
       ))}
     </ul>
     {children}
+    
   </div>
 )
