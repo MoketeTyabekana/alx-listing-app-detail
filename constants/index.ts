@@ -482,3 +482,6 @@ export interface PropertyProps {
   discount: string;
 
 }
+
+
+
