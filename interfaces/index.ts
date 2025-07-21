@@ -10,13 +10,13 @@ export interface CardProps {
   features: string[];
 }
 
-
 export interface ButtonProps {
   label: string;
-  onClick?: () => void;
+  onClick: () => void;
   type?: "button" | "submit" | "reset";
-  variant?: "primary" | "secondary" | "danger";
+  variant?: "primary" | "secondary" | "danger"; // ✅ Tell TS it's a key of variantStyle
   className?: string;
-  icon?: React.ReactNode;
   disabled?: boolean;
 }
+
+

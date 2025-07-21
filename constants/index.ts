@@ -391,7 +391,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-4"
     },
-    image: "/assets/image14.png",
+    image: "/assets/image10.png",
     discount: "25"
   },
   {
@@ -427,7 +427,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "/public/assets/image12.png",
+    image: "/assets/image12.png",
     discount: ""
   },
   {
@@ -445,7 +445,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "5",
       occupants: "8-10"
     },
-    image: "/public/assets/image11.png",
+    image: "/assets/image11.png",
     discount: "60"
   },
   {
@@ -463,11 +463,10 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "/public/assets/image10.png",
+    image: "/assets/image10.png",
     discount: ""
   }
 ];
-
 
 interface Address {
   state: string;
@@ -481,6 +480,7 @@ interface Offers {
   occupants: string;
 }
 
+
 export interface PropertyProps {
      name: string;
   address: Address;
@@ -492,7 +492,5 @@ export interface PropertyProps {
   discount: string;
 
 }
-
-
 
 export const BACKGROUND_IMAGE = "/assets/bg.png";
