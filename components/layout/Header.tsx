@@ -65,9 +65,11 @@ export default function Header() {
           <span className="text-sm font-medium">
             Overseas trip? Get the latest information on travel guides
           </span>
-          <button className="rounded-full bg-black text-white px-4 py-1 text-sm hover:bg-gray-900 transition ease-in-out 0.3s">
-            More Info
-          </button>
+          <Button
+            label={BUTTON_TEXT.moreInfo}
+            variant="tertiary"
+            onClick={() => console.log("All clicked!")}
+          />
         </div>
       </div>
 
@@ -164,8 +166,16 @@ export default function Header() {
 
             {/* Auth Buttons */}
             <div className="flex items-center gap-6">
-              <Button label={BUTTON_TEXT.signIn} variant="primary" className="bg-emerald-500 rounded-full px-4 py-2 text-white hover:bg-emerald-800" />
-              <Button label={BUTTON_TEXT.signUp} variant="secondary" className="bg-gray-50 rounded-full px-4 py-2 text-gray-950 border-1 border-gray-200 hover:bg-gray-800 hover:text-white"/>
+              <Button
+                label={BUTTON_TEXT.signIn}
+                variant="primary"
+                onClick={() => console.log("All clicked!")}
+              />
+              <Button
+                label={BUTTON_TEXT.signUp}
+                variant="secondary"
+                onClick={() => console.log("All clicked!")}
+              />
             </div>
           </div>
         </div>

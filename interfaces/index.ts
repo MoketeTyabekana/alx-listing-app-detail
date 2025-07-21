@@ -14,7 +14,7 @@ export interface ButtonProps {
   label: string;
   onClick: () => void;
   type?: "button" | "submit" | "reset";
-  variant?: "primary" | "secondary" | "danger"; // ✅ Tell TS it's a key of variantStyle
+  variant?: "primary" | "secondary" | "danger"|"tertiary"; // ✅ Tell TS it's a key of variantStyle
   className?: string;
   disabled?: boolean;
 }

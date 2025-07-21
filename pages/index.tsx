@@ -12,10 +12,10 @@ export default function Home() {
         style={{ backgroundImage: `url(${BACKGROUND_IMAGE})` }}
       >
         <div className=" w-2/5 text-white  text-center">
-          <h1 className="text-6xl font-semibold mb-6">
+          <h1 className="text-6xl font-semibold mb-6 leading-tight">
             Find your favorite place here!
           </h1>
-          <p className="text-2xl">
+          <p className="text-xl">
             The best prices for over 2 million properties worldwide.
           </p>
         </div>
@@ -28,32 +28,31 @@ export default function Home() {
             variant="secondary"
             onClick={() => console.log("All clicked!")}
           />
-<Button
-  label={BUTTON_TEXT.topVilla}
-  variant="secondary"
-  onClick={() => console.log("All clicked!")}
-/>
-<Button
-  label={BUTTON_TEXT.freeReschedule}
-  variant="secondary"
-  onClick={() => console.log("All clicked!")}
-/>
-<Button
-  label={BUTTON_TEXT.bookNowPayLater}
-  variant="secondary"
-  onClick={() => console.log("All clicked!")}
-/>
-<Button
-  label={BUTTON_TEXT.selfCheckin}
-  variant="secondary"
-  onClick={() => console.log("All clicked!")}
-/>
-<Button
-  label={BUTTON_TEXT.instantBook}
-  variant="secondary"
-  onClick={() => console.log("All clicked!")}
-/>
-
+          <Button
+            label={BUTTON_TEXT.topVilla}
+            variant="secondary"
+            onClick={() => console.log("All clicked!")}
+          />
+          <Button
+            label={BUTTON_TEXT.freeReschedule}
+            variant="secondary"
+            onClick={() => console.log("All clicked!")}
+          />
+          <Button
+            label={BUTTON_TEXT.bookNowPayLater}
+            variant="secondary"
+            onClick={() => console.log("All clicked!")}
+          />
+          <Button
+            label={BUTTON_TEXT.selfCheckin}
+            variant="secondary"
+            onClick={() => console.log("All clicked!")}
+          />
+          <Button
+            label={BUTTON_TEXT.instantBook}
+            variant="secondary"
+            onClick={() => console.log("All clicked!")}
+          />
         </div>
         <div className="flex-1/3"></div>
       </section>
