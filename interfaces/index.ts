@@ -20,3 +20,6 @@ export interface ButtonProps {
 }
 
 
+export interface IconButtonProps extends ButtonProps {
+  
+}

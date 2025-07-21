@@ -4,6 +4,7 @@ import Button from "@/components/common/Button";
 import Card from "@/components/common/Card";
 import { PROPERTYLISTINGSAMPLE } from "@/constants/index";
 
+
 export default function Home() {
   return (
     <main className="px-10 ">
@@ -22,7 +23,7 @@ export default function Home() {
       </section>
 
       <section className=" flex gap-2 mt-10">
-        <div className=" flex-2/3 flex justify-between">
+        <div className=" flex-3/5 flex justify-start gap-2">
           <Button
             label={BUTTON_TEXT.all}
             variant="secondary"
@@ -54,7 +55,20 @@ export default function Home() {
             onClick={() => console.log("All clicked!")}
           />
         </div>
-        <div className="flex-1/3"></div>
+        <div className="flex-2/5 flex justify-end gap-2">
+         <Button
+   label={BUTTON_TEXT.filter}
+   variant="secondary"
+   onClick={() => console.log("All clicked!")}
+ />
+  <Button
+   label={BUTTON_TEXT.sortByHighestPrice}
+   variant="secondary"
+   onClick={() => console.log("All clicked!")}
+/>
+  
+
+        </div>
       </section>
 
       <section className="w-full  py-6 grid grid-cols-4 gap-4">
