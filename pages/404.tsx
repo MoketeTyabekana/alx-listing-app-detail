@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import { FaHome } from 'react-icons/fa'; 
+import Button from '@/components/common/Button';
+import { useRouter } from 'next/router';
+import { BUTTON_TEXT } from '@/constants';
 
 const Custom404 = () => {
+
+    const router = useRouter();
+    
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col justify-center items-center text-white">
       {/* Main Heading */}
@@ -16,13 +22,11 @@ const Custom404 = () => {
       </p>
 
       {/* Button to navigate back */}
-      <Link
-        href="/"
-        className="flex items-center space-x-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
-      >
-        <FaHome size={20} />
-        <span>Go Back Home</span>
-      </Link>
+          <Button
+      label={BUTTON_TEXT.goBackHome}
+      variant="danger"
+      onClick={() => router.push('/')}
+    />
     </div>
   );
 }

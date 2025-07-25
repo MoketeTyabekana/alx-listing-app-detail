@@ -18,6 +18,7 @@ export const BUTTON_TEXT = {
   signIn: "Sign In",
   signUp: "Sign Up",
   moreInfo: "More Info",
+  goBackHome:"Go Back To Home Page"
 };
 
 
