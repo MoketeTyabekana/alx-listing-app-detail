@@ -17,9 +17,6 @@ export interface ButtonProps {
   variant?: "primary" | "secondary" | "danger"|"tertiary"; // ✅ Tell TS it's a key of variantStyle
   className?: string;
   disabled?: boolean;
+  icon?:string;
 }
 
-
-export interface IconButtonProps extends ButtonProps {
-  
-}

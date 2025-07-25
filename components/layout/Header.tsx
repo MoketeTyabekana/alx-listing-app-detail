@@ -2,6 +2,8 @@ import { useState } from "react";
 import vector from "@/public/assets/Vector.png";
 import { BUTTON_TEXT } from "@/constants/index";
 import Button from "../common/Button";
+import { useRouter } from 'next/router';
+
 
 import {
   search,
@@ -56,6 +58,9 @@ export default function Header() {
     setSearchData((prev) => ({ ...prev, [field]: value }));
   };
 
+   const router = useRouter();
+
+
   return (
     <header className="w-full">
       {/* Top Banner */}
@@ -74,7 +79,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <div className="bg-white border-b border-gray-200 px-10">
+      <div className="bg-white border-b border-gray-200 lg:px-10 px-2">
         <div className=" mx-auto px-4 py-4">
           <div className="flex items-center justify-between gap-8">
             {/* Logo */}
@@ -169,12 +174,14 @@ export default function Header() {
               <Button
                 label={BUTTON_TEXT.signIn}
                 variant="primary"
-                onClick={() => console.log("All clicked!")}
+                onClick={() => router.push('/sign-in')}
+
               />
               <Button
                 label={BUTTON_TEXT.signUp}
                 variant="secondary"
-                onClick={() => console.log("All clicked!")}
+                onClick={() => router.push('/sign-up')}
+
               />
             </div>
           </div>
@@ -182,7 +189,7 @@ export default function Header() {
       </div>
 
       {/* Accommodation Types */}
-      <div className="bg-white border-b border-gray-200 px-10">
+      <div className="flex justify-between bg-white border-b border-gray-200 px-10">
         <div className=" mx-auto px-4 py-4">
           <div className="flex items-center gap-8 overflow-auto no-scrollbar">
             {accommodationTypes.map((type) => (
