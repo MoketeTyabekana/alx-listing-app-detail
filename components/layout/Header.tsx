@@ -89,7 +89,8 @@ export default function Header() {
                 alt="Vector icon"
                 width={70}
                 height={70}
-                className="cover"
+                className="cover cursor-pointer"
+                 onClick={() => router.push('/')}
               />{" "}
             </div>
 
@@ -174,13 +175,13 @@ export default function Header() {
               <Button
                 label={BUTTON_TEXT.signIn}
                 variant="primary"
-                onClick={() => router.push('/sign-in')}
+                onClick={() => router.push('/signIn')}
 
               />
               <Button
                 label={BUTTON_TEXT.signUp}
                 variant="secondary"
-                onClick={() => router.push('/sign-up')}
+                onClick={() => router.push('/signUp')}
 
               />
             </div>
