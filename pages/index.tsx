@@ -7,7 +7,7 @@ import { PROPERTYLISTINGSAMPLE } from "@/constants/index";
 
 export default function Home() {
   return (
-    <main className="lg:px-10 px-2 ">
+    <main className="lg:px-10 px-2 overflow-x-none">
       <section
         className="w-full hero h-[400px] bg-cover bg-center rounded-2xl mt-10 flex justify-center items-center"
         style={{ backgroundImage: `url(${BACKGROUND_IMAGE})` }}
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full  py-6 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+      <section className="w-full  py-6 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
         {PROPERTYLISTINGSAMPLE.map((property, index) => (
           <Card
             key={index}
