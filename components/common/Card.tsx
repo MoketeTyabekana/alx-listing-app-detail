@@ -19,7 +19,7 @@ const Card = ({
 }: CardProps & { children?: React.ReactNode }) => (
    
 // Property image
-  <div className=" rounded-2xl hover:shadow-sm hover:bg-gray-100 transition-all 0.6s  mb-10 p-1">
+  <div className=" rounded-2xl hover:shadow-sm hover:bg-gray-100 transition-all 0.8s  mb-10 p-1">
     <Image
       src={image}
       alt={title}
