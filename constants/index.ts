@@ -21,6 +21,13 @@ export const BUTTON_TEXT = {
   goBackHome:"Go Back To Home Page"
 };
 
+export const Colors={
+  Primary:"#FF5A5F",
+  Secondary:"#008489",
+  Background: "#FFFFFF",
+  Text: "#222222",
+  Secondary_Text: "#717171"
+}
 
 export const UI_TEXT={
     CARD: {
