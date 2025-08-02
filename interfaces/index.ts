@@ -21,4 +21,31 @@ export interface ButtonProps {
 }
 
 
+export interface PropertyProps {
+  id: string;
+  name: string;
+  price: number;
+  rating: number;
+  address: {
+    state?: string;
+    city: string;
+    country: string;
+  };
+  image: string;
+  description: string;
+  category: string[];
+  reviews?: {
+    user: string;
+    avatar?: string;
+    comment: string;
+    rating: number;
+  }[];
+  bedrooms: number;
+  bathrooms: number;
+  number_of_guests: string;
+  features: string[];
+  discount?: string;
+}
+
+
 

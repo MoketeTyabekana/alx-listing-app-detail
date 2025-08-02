@@ -7,7 +7,8 @@ import ReviewSection from "@/components/property/ReviewSection";
 export default function PropertyPage() {
   const router = useRouter();
   const { id } = router.query;
-  const property = PROPERTYLISTINGSAMPLE.find((item) => item.name === id);
+
+  const property = PROPERTYLISTINGSAMPLE.find((item) => item.id === id);
 
   if (!property) return <p>Property not found</p>;
 
@@ -15,7 +16,7 @@ export default function PropertyPage() {
     <main>
       <PropertyDetail property={property} />
       <BookingSection price={property.price} />
-      {/* <ReviewSection reviews={property.reviews} /> */}
+      <ReviewSection reviews={property.reviews} />
     </main>
   );
 }

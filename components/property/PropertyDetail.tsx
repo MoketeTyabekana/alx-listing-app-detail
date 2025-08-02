@@ -12,7 +12,13 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
 
       {/* Image Grid */}
       <div className="grid grid-cols-2 gap-4 mt-4">
-        <Image src={property.image} alt={property.name} className="col-span-2 w-full h-96 object-cover rounded-lg" />
+        <Image
+          src={property.image}
+          alt={property.name}
+          width={800} // Set an appropriate width
+          height={384} // Set an appropriate height (matches h-96 = 384px)
+          className="col-span-2 w-full h-96 object-cover rounded-lg"
+        />
         {/* Add more images */}
       </div>
 
