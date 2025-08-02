@@ -4,7 +4,7 @@ const SignUp:React.FC=() => {
   return (
     <div>
        <h1>
-       Sign In
+       Sign Up
    </h1>
     </div>
   );

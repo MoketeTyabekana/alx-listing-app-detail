@@ -60,7 +60,7 @@ const Card = ({
     </div>
 
     {/* Bedrooms,Baths and users */}
-    <div className="flex justify-between items-center bg-gray-50 p-2 mt-2 rounded-full" >
+    <div className="flex justify-between items-center bg-gray-50/50 p-2 mt-2 rounded-full" >
       <span className="flex items-center gap-2 text-black">
         <BedDouble height={16} width={16} />
         {bedrooms}
