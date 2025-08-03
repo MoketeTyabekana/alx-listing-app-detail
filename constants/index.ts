@@ -1,3 +1,5 @@
+import { PropertyProps } from "@/interfaces";
+
 export const BUTTON_TEXT = {
   all: "All",
   topVilla: "Top Villa",
@@ -105,8 +107,10 @@ export const UI_TEXT={
     ]
 }
 
+
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
   {
+    id: "1",
     name: "Villa Ocean Breeze",
     address: {
       state: "Seminyak",
@@ -123,15 +127,20 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image13.png",
     discount: "",
+    description: "A luxurious villa with a beautiful pool and ocean breeze, perfect for families or groups seeking relaxation in Bali.",
+    bedrooms: 3,
+    bathrooms: 3,
+    number_of_guests: "6",
+    features: ["Luxury Villa", "Pool", "Free Parking"],
     reviews: [
       {
-        name: "Alice",
+        user: "Alice",
         avatar: "/assets/avatar1.png",
         rating: 5,
         comment: "Amazing villa, beautiful pool and great service!"
       },
       {
-        name: "Bob",
+        user: "Bob",
         avatar: "/assets/avatar2.png",
         rating: 4,
         comment: "Very comfortable and clean. Would stay again."
@@ -139,6 +148,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
+    id: "2",
     name: "Mountain Escape Chalet",
     address: {
       state: "Aspen",
@@ -155,9 +165,14 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image15.png",
     discount: "30",
+    description: "A cozy mountain chalet in Aspen with stunning views, a fireplace, and easy self check-in for ski lovers.",
+    bedrooms: 4,
+    bathrooms: 2,
+    number_of_guests: "7",
+    features: ["Mountain View", "Fireplace", "Self Checkin"],
     reviews: [
       {
-        name: "Charlie",
+        user: "Charlie",
         avatar: "/assets/avatar3.png",
         rating: 5,
         comment: "Perfect for a ski trip. Loved the fireplace!"
@@ -165,6 +180,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
+    id: "3",
     name: "Cozy Desert Retreat",
     address: {
       state: "Palm Springs",
@@ -181,16 +197,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image8.png",
     discount: "",
+    description: "A charming desert retreat with stunning views, perfect for couples or small families. Enjoy the tranquility and beauty of the desert landscape.",
+    bedrooms: 2,
+    bathrooms: 1,
+    number_of_guests: "3",
+    features: ["Desert View", "Pet Friendly", "Self Checkin"],
     reviews: [
       {
-        name: "Dana",
+        user: "Dana",
         avatar: "/assets/avatar4.png",
         rating: 5,
-        comment: "Loved the desert views and pet friendly policy!"
+        comment: "Charming and peaceful. Loved the desert views!"
       }
     ]
   },
   {
+    id: "4",
     name: "City Lights Penthouse",
     address: {
       state: "New York",
@@ -207,16 +229,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image2.png",
     discount: "15",
+    description: "Experience the vibrant city life in this modern penthouse with breathtaking views of the New York skyline. Ideal for couples or business travelers.",
+    bedrooms: 2,
+    bathrooms: 2,
+    number_of_guests: "4",
+    features: ["City View", "Free WiFi", "24h Checkin"],
     reviews: [
       {
-        name: "Eve",
+        user: "Eve",
         avatar: "/assets/avatar5.png",
         rating: 4,
-        comment: "Great location and view. WiFi was fast."
+        comment: "Amazing view and location. Would recommend!"
       }
     ]
   },
   {
+    id: "5",
     name: "Riverside Cabin",
     address: {
       state: "Queenstown",
@@ -231,11 +259,16 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "4-6"
     },
-    image: "/assets/bg.png",
+    image: "/assets/image2.png",
     discount: "20",
+    description: "Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming and paddleboarding... [Trimmed for clarity]",
+    bedrooms: 3,
+    bathrooms: 2,
+    number_of_guests: "6",
+    features: ["Riverside", "Private Dock", "Free Kayaks"],
     reviews: [
       {
-        name: "Frank",
+        user: "Frank",
         avatar: "/assets/avatar6.png",
         rating: 5,
         comment: "Kayaks were a fun bonus. Peaceful location."
@@ -243,6 +276,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
+    id: "6",
     name: "Modern Beachfront Villa",
     address: {
       state: "Sidemen",
@@ -259,16 +293,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image4.png",
     discount: "",
+    description: "A stunning beachfront villa with private pool and chef service. Ideal for large families or groups seeking a luxurious getaway.",
+    bedrooms: 5,
+    bathrooms: 4,
+    number_of_guests: "10",
+    features: ["Beachfront", "Private Pool", "Chef Service"],
     reviews: [
       {
-        name: "Grace",
+        user: "Grace",
         avatar: "/assets/avatar7.png",
         rating: 5,
-        comment: "Chef service was fantastic. Gorgeous pool!"
+        comment: "The chef service was fantastic. Beautiful villa!"
       }
     ]
   },
   {
+    id: "7",
     name: "Lakeside Chalet",
     address: {
       state: "Banff",
@@ -285,16 +325,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image5.png",
     discount: "10",
+    description: "A beautiful lakeside chalet with stunning mountain views and access to hiking trails. Perfect for outdoor enthusiasts.",
+    bedrooms: 3,
+    bathrooms: 3,
+    number_of_guests: "5",
+    features: ["Lakeside", "Mountain View", "Hiking Trails"],
     reviews: [
       {
-        name: "Hannah",
+        user: "Hannah",
         avatar: "/assets/avatar8.png",
-        rating: 4,
-        comment: "Beautiful scenery and great hiking nearby."
+        rating: 5,
+        comment: "Loved the hiking trails and the view!"
       }
     ]
   },
   {
+    id: "8",
     name: "Tropical Garden Villa",
     address: {
       state: "Koh Samui",
@@ -311,16 +357,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image6.png",
     discount: "25",
+    description: "A tropical villa surrounded by lush gardens, offering a serene escape with free parking and self check-in.",
+    bedrooms: 3,
+    bathrooms: 3,
+    number_of_guests: "6",
+    features: ["Garden", "Free Parking", "Self Checkin"],
     reviews: [
       {
-        name: "Ivan",
+        user: "Ivan",
         avatar: "/assets/avatar9.png",
         rating: 5,
-        comment: "Loved the gardens and easy check-in process."
+        comment: "Beautiful gardens and easy check-in."
       }
     ]
   },
   {
+    id: "9",
     name: "Urban Loft",
     address: {
       state: "Berlin",
@@ -337,16 +389,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image7.png",
     discount: "",
+    description: "A stylish urban loft in the heart of Berlin, featuring modern amenities, free WiFi, and 24-hour check-in.",
+    bedrooms: 2,
+    bathrooms: 1,
+    number_of_guests: "3",
+    features: ["City Center", "Free WiFi", "24h Checkin"],
     reviews: [
       {
-        name: "Julia",
+        user: "Julia",
         avatar: "/assets/avatar10.png",
         rating: 4,
-        comment: "Central location, modern and clean."
+        comment: "Great location and amenities."
       }
     ]
   },
   {
+    id: "10",
     name: "Secluded Forest Cabin",
     address: {
       state: "Whistler",
@@ -363,16 +421,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image8.png",
     discount: "40",
+    description: "A secluded cabin in the forest with a hot tub and self check-in. Ideal for a relaxing retreat in nature.",
+    bedrooms: 4,
+    bathrooms: 2,
+    number_of_guests: "7",
+    features: ["Secluded", "Hot Tub", "Self Checkin"],
     reviews: [
       {
-        name: "Kevin",
+        user: "Kevin",
         avatar: "/assets/avatar11.png",
         rating: 5,
-        comment: "Hot tub in the forest was magical!"
+        comment: "Hot tub was a highlight. Very peaceful."
       }
     ]
   },
   {
+    id: "11",
     name: "Cliffside Villa",
     address: {
       state: "Amalfi",
@@ -389,16 +453,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image9.png",
     discount: "50",
+    description: "An exquisite cliffside villa with an infinity pool and breathtaking sea views. Perfect for a luxurious getaway.",
+    bedrooms: 4,
+    bathrooms: 4,
+    number_of_guests: "8",
+    features: ["Cliffside", "Infinity Pool", "Sea View"],
     reviews: [
       {
-        name: "Liam",
+        user: "Liam",
         avatar: "/assets/avatar12.png",
         rating: 5,
-        comment: "Infinity pool and sea view are breathtaking."
+        comment: "Infinity pool and views were amazing!"
       }
     ]
   },
   {
+    id: "12",
     name: "Coastal Escape Villa",
     address: {
       state: "Noosa",
@@ -415,16 +485,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image18.png",
     discount: "",
+    description: "A beachfront villa in Noosa with pet-friendly policies and free parking. Ideal for families and pets.",
+    bedrooms: 3,
+    bathrooms: 3,
+    number_of_guests: "6",
+    features: ["Beachfront", "Pet Friendly", "Free Parking"],
     reviews: [
       {
-        name: "Mia",
+        user: "Mia",
         avatar: "/assets/avatar13.png",
-        rating: 4,
-        comment: "Perfect for families and pets. Great beach access."
+        rating: 5,
+        comment: "Perfect for our family and dog!"
       }
     ]
   },
   {
+    id: "13",
     name: "Historical Villa",
     address: {
       state: "Florence",
@@ -441,16 +517,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image17.png",
     discount: "35",
+    description: "A charming historical villa in Tuscany with free breakfast and self check-in. Experience the beauty of the Italian countryside.",
+    bedrooms: 2,
+    bathrooms: 2,
+    number_of_guests: "4",
+    features: ["Historical", "Free Breakfast", "Self Checkin"],
     reviews: [
       {
-        name: "Nina",
+        user: "Nina",
         avatar: "/assets/avatar14.png",
         rating: 5,
-        comment: "Charming villa with delicious breakfast."
+        comment: "Loved the breakfast and the history!"
       }
     ]
   },
   {
+    id: "14",
     name: "Downtown Apartment",
     address: {
       state: "Tokyo",
@@ -467,16 +549,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image16.png",
     discount: "",
+    description: "A modern apartment in downtown Tokyo, close to public transport and major attractions. Ideal for city explorers.",
+    bedrooms: 1,
+    bathrooms: 1,
+    number_of_guests: "2",
+    features: ["City Center", "Free WiFi", "Public Transport"],
     reviews: [
       {
-        name: "Oscar",
+        user: "Oscar",
         avatar: "/assets/avatar15.png",
         rating: 4,
-        comment: "Convenient for exploring Tokyo. Clean and modern."
+        comment: "Convenient location, clean and modern."
       }
     ]
   },
   {
+    id: "15",
     name: "Luxury Safari Lodge",
     address: {
       state: "Serengeti",
@@ -493,16 +581,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image15.png",
     discount: "20",
+    description: "An exclusive safari lodge in the Serengeti, offering guided tours and free breakfast. Experience the thrill of a wildlife safari.",
+    bedrooms: 4,
+    bathrooms: 4,
+    number_of_guests: "8",
+    features: ["Safari", "Guided Tours", "Free Breakfast"],
     reviews: [
       {
-        name: "Priya",
+        user: "Priya",
         avatar: "/assets/avatar16.png",
         rating: 5,
-        comment: "Unforgettable safari experience. Excellent guides."
+        comment: "Safari tours were unforgettable!"
       }
     ]
   },
   {
+    id: "16",
     name: "Countryside Cottage",
     address: {
       state: "Cotswolds",
@@ -519,16 +613,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image10.png",
     discount: "25",
+    description: "A cozy countryside cottage with a fireplace and self check-in. Perfect for a romantic getaway or a peaceful retreat.",
+    bedrooms: 2,
+    bathrooms: 1,
+    number_of_guests: "4",
+    features: ["Countryside", "Fireplace", "Self Checkin"],
     reviews: [
       {
-        name: "Quinn",
+        user: "Quinn",
         avatar: "/assets/avatar17.png",
-        rating: 4,
-        comment: "Cozy and peaceful. Loved the fireplace."
+        rating: 5,
+        comment: "Fireplace made it so cozy!"
       }
     ]
   },
   {
+    id: "17",
     name: "Riverfront Mansion",
     address: {
       state: "Paris",
@@ -545,16 +645,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image13.png",
     discount: "30",
+    description: "An elegant mansion by the river in Paris, featuring a private garden and self check-in. Experience luxury and comfort.",
+    bedrooms: 4,
+    bathrooms: 3,
+    number_of_guests: "8",
+    features: ["Riverfront", "Private Garden", "Self Checkin"],
     reviews: [
       {
-        name: "Rosa",
+        user: "Rosa",
         avatar: "/assets/avatar18.png",
         rating: 5,
-        comment: "Elegant mansion with beautiful gardens."
+        comment: "Beautiful garden and river views."
       }
     ]
   },
   {
+    id: "18",
     name: "Ski Chalet",
     address: {
       state: "Zermatt",
@@ -571,9 +677,14 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image12.png",
     discount: "",
+    description: "A charming ski chalet in Zermatt with mountain views, ski access, and a cozy fireplace. Ideal for winter sports enthusiasts.",
+    bedrooms: 3,
+    bathrooms: 3,
+    number_of_guests: "5",
+    features: ["Mountain View", "Ski Access", "Fireplace"],
     reviews: [
       {
-        name: "Sam",
+        user: "Sam",
         avatar: "/assets/avatar19.png",
         rating: 5,
         comment: "Perfect for skiing. Warm and inviting."
@@ -581,6 +692,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
+    id: "19",
     name: "Island Paradise Villa",
     address: {
       state: "Mahe",
@@ -597,9 +709,14 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image11.png",
     discount: "60",
+    description: "An absolute paradise villa in Seychelles with beachfront access, private pool, and chef service. Perfect for a luxurious escape.",
+    bedrooms: 5,
+    bathrooms: 5,
+    number_of_guests: "10",
+    features: ["Beachfront", "Private Pool", "Chef Service"],
     reviews: [
       {
-        name: "Tina",
+        user: "Tina",
         avatar: "/assets/avatar20.png",
         rating: 5,
         comment: "Absolute paradise. Chef was amazing!"
@@ -607,6 +724,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
+    id: "20",
     name: "Clifftop Retreat",
     address: {
       state: "Cape Town",
@@ -623,9 +741,14 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image10.png",
     discount: "",
+    description: "A stunning clifftop retreat in Cape Town with ocean views, private pool, and self check-in. Ideal for a luxurious and private getaway.",
+    bedrooms: 3,
+    bathrooms: 3,
+    number_of_guests: "5",
+    features: ["Ocean View", "Private Pool", "Self Checkin"],
     reviews: [
       {
-        name: "Uma",
+        user: "Uma",
         avatar: "/assets/avatar21.png",
         rating: 5,
         comment: "Spectacular views and very private."
@@ -633,35 +756,5 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   }
 ];
-
-interface Address {
-  state: string;
-  city: string;
-  country: string;
-}
-
-interface Offers {
-  bed: string;
-  shower: string;
-  occupants: string;
-}
-
-
-export interface PropertyProps {
-  name: string;
-  address: Address;
-  rating: number;
-  category: string[];
-  price: number;
-  offers: Offers;
-  image: string;
-  discount: string;
-  reviews: {
-    name: string;
-    avatar: string;
-    rating: number;
-    comment: string;
-  }[];
-}
 
 export const BACKGROUND_IMAGE = "/assets/bg.png";

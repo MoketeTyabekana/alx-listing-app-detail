@@ -13,10 +13,10 @@ export default function PropertyPage() {
   if (!property) return <p>Property not found</p>;
 
   return (
-    <main>
+    <main className="lg:px-10 px-2 overflow-x-hidden">
       <PropertyDetail property={property} />
       <BookingSection price={property.price} />
-      <ReviewSection reviews={property.reviews} />
+      <ReviewSection reviews={property.reviews ?? []} />
     </main>
   );
 }

@@ -5,7 +5,7 @@ const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
     <div className="mt-8">
       <h3 className="text-2xl font-semibold">Reviews</h3>
       {reviews.map((review, index) => (
-        <div key={index} className="border-b pb-4 mb-4">
+        <div key={index} className="border-b pb-4 mb-4 grid grid-cols-2 gap-4">
           <div className="flex items-center">
             <Image
               src={review.avatar}

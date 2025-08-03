@@ -20,9 +20,22 @@ export interface ButtonProps {
   icon?:string;
 }
 
+export interface Address {
+  state: string;
+  city: string;
+  country: string;
+}
+
+ export interface Offers {
+  bed: string;
+  shower: string;
+  occupants: string;
+}
+
+
 
 export interface PropertyProps {
-  id: string;
+  id: number | string;
   name: string;
   price: number;
   rating: number;
@@ -31,7 +44,10 @@ export interface PropertyProps {
     city: string;
     country: string;
   };
-  image: string;
+   images?: {
+    main: string;
+    others: string[];
+  };
   description: string;
   category: string[];
   reviews?: {
@@ -45,6 +61,8 @@ export interface PropertyProps {
   number_of_guests: string;
   features: string[];
   discount?: string;
+  offers?: Offers;
+  image?: string; 
 }
 
 

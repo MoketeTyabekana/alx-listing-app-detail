@@ -11,16 +11,33 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
       </div>
 
       {/* Image Grid */}
-      <div className="grid grid-cols-2 gap-4 mt-4">
-        <Image
-          src={property.image}
-          alt={property.name}
-          width={800} // Set an appropriate width
-          height={384} // Set an appropriate height (matches h-96 = 384px)
-          className="col-span-2 w-full h-96 object-cover rounded-lg"
-        />
-        {/* Add more images */}
+      <div className="grid grid-cols-4 grid-rows-2 gap-2 h-[500px]">
+        {/* Main Image */}
+        <div className="col-span-2 row-span-2 relative">
+          <Image
+            src={property.images?.main || property.image}
+            alt="Main property view"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-md"
+          />
+        </div>
+
+        {/* Other Images */}
+        {property.images?.others?.length > 0 &&
+          property.images.others.map((src, idx) => (
+            <div key={idx} className="relative h-full">
+              <Image
+                src={src}
+                alt={`Property view ${idx + 1}`}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-md"
+              />
+            </div>
+          ))}
       </div>
+
 
       {/* Description */}
       <div className="mt-4">
