@@ -20,7 +20,10 @@ export const BUTTON_TEXT = {
   signIn: "Sign In",
   signUp: "Sign Up",
   moreInfo: "More Info",
-  goBackHome:"Go Back To Home Page"
+  goBackHome:"Go Back To Home Page",
+  save:"Save",
+  share:"Share",
+  showAll: "Show All Photo",
 };
 
 export const UI_TEXT={
@@ -144,16 +147,41 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Alice",
-        avatar: "/assets/avatar1.png",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip:"Family Trip",
+        avatar: "/assets/avatar.png",
         rating: 5,
         comment: "Amazing villa, beautiful pool and great service!"
       },
       {
         user: "Bob",
-        avatar: "/assets/avatar2.png",
+        avatar: "/assets/avatar.png",
         rating: 4,
-        comment: "Very comfortable and clean. Would stay again."
-      }
+        comment: "Very comfortable and clean. Would stay again.",
+        date: "2023-01-15",
+        period: "3 years on ALX",
+        trip: "Family trip"
+      },
+        {
+    user: "Bob",
+     date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
+  
+    avatar: "/assets/avatar.png",
+    rating: 4,
+    comment: "Very comfortable and clean. Would stay again."
+  },
+    {
+    user: "Bob",
+     date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
+    avatar: "/assets/avatar.png",
+    rating: 4,
+    comment: "Very comfortable and clean. Would stay again."
+  }
     ]
   },
   {
@@ -191,6 +219,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Charlie",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar3.png",
         rating: 5,
         comment: "Perfect for a ski trip. Loved the fireplace!"
@@ -232,6 +263,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Dana",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar4.png",
         rating: 5,
         comment: "Charming and peaceful. Loved the desert views!"
@@ -273,6 +307,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Eve",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar5.png",
         rating: 4,
         comment: "Amazing view and location. Would recommend!"
@@ -314,6 +351,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Frank",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar6.png",
         rating: 5,
         comment: "Kayaks were a fun bonus. Peaceful location."
@@ -355,6 +395,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Grace",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar7.png",
         rating: 5,
         comment: "The chef service was fantastic. Beautiful villa!"
@@ -395,6 +438,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Hannah",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar8.png",
         rating: 5,
         comment: "Loved the hiking trails and the view!"
@@ -436,6 +482,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Ivan",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar9.png",
         rating: 5,
         comment: "Beautiful gardens and easy check-in."
@@ -477,6 +526,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Julia",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar10.png",
         rating: 4,
         comment: "Great location and amenities."
@@ -518,6 +570,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Kevin",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar11.png",
         rating: 5,
         comment: "Hot tub was a highlight. Very peaceful."
@@ -559,6 +614,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Liam",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar12.png",
         rating: 5,
         comment: "Infinity pool and views were amazing!"
@@ -600,6 +658,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Mia",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar13.png",
         rating: 5,
         comment: "Perfect for our family and dog!"
@@ -641,6 +702,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Nina",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar14.png",
         rating: 5,
         comment: "Loved the breakfast and the history!"
@@ -682,6 +746,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Oscar",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar15.png",
         rating: 4,
         comment: "Convenient location, clean and modern."
@@ -714,6 +781,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Priya",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar16.png",
         rating: 5,
         comment: "Safari tours were unforgettable!"
@@ -746,6 +816,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Quinn",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar17.png",
         rating: 5,
         comment: "Fireplace made it so cozy!"
@@ -778,6 +851,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Rosa",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar18.png",
         rating: 5,
         comment: "Beautiful garden and river views."
@@ -810,6 +886,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Sam",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar19.png",
         rating: 5,
         comment: "Perfect for skiing. Warm and inviting."
@@ -842,6 +921,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Tina",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar20.png",
         rating: 5,
         comment: "Absolute paradise. Chef was amazing!"
@@ -874,6 +956,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Uma",
+         date: "2023-02-20",
+ period: "2 years on ALX",
+ trip:"Family Trip",
         avatar: "/assets/avatar21.png",
         rating: 5,
         comment: "Spectacular views and very private."

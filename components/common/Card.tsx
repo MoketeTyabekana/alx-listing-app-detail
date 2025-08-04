@@ -2,7 +2,6 @@ import React from "react";
 import { CardProps } from "@/interfaces";
 import Image from "next/image";
 import { Star } from "lucide-react";
-import Pill from "@/components/common/Pill";
 import { BedDouble, Bath, Users } from "lucide-react";
 
 const Card = ({
@@ -15,7 +14,7 @@ const Card = ({
   number_of_guests,
   rating,
   features,
-  children,
+ 
 }: CardProps & { children?: React.ReactNode }) => (
    
 // Property image

@@ -18,6 +18,8 @@ export interface ButtonProps {
   className?: string;
   disabled?: boolean;
   icon?:string;
+   children?: React.ReactNode;
+  
 }
 
 export interface Address {
@@ -30,6 +32,17 @@ export interface Address {
   bed: string;
   shower: string;
   occupants: string;
+}
+
+export interface Review {
+  date: string;
+  period: string;
+  trip: string;
+  user: string;
+  avatar?: string;
+  comment: string;
+  rating: number;
+  
 }
 
 
@@ -48,14 +61,9 @@ export interface PropertyProps {
     main: string;
     others: string[];
   };
+  reviews?: Review[];
   description: string;
   category: string[];
-  reviews?: {
-    user: string;
-    avatar?: string;
-    comment: string;
-    rating: number;
-  }[];
   bedrooms: number;
   bathrooms: number;
   number_of_guests: string;
