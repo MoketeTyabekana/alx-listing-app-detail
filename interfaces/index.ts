@@ -71,6 +71,7 @@ export interface PropertyProps {
   discount?: string;
   offers?: Offers;
   image?: string; 
+  // published:Date;
 }
 
 

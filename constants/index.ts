@@ -20,100 +20,100 @@ export const BUTTON_TEXT = {
   signIn: "Sign In",
   signUp: "Sign Up",
   moreInfo: "More Info",
-  goBackHome:"Go Back To Home Page",
-  save:"Save",
-  share:"Share",
+  goBackHome: "Go Back To Home Page",
+  save: "Save",
+  share: "Share",
   showAll: "Show All Photo",
 };
 
-export const UI_TEXT={
-    CARD: {
-        TITLE:'Item Title',
-        PRICE_PER_NIGHT: 'Price',
-        CITY: 'City',
-        IMAGE: 'Image',
-        BEDROOMS: 'Bedrooms',
-        BATHROOMS: 'Bathrooms',
-        NUMBER_OF_GUESTS: 'Number of guests',
-        RATING: 'Rating',
-        FEATURES:["Top Villa", "Self CheckIn", "Free Reschedule"],
+export const UI_TEXT = {
+  CARD: {
+    TITLE: 'Item Title',
+    PRICE_PER_NIGHT: 'Price',
+    CITY: 'City',
+    IMAGE: 'Image',
+    BEDROOMS: 'Bedrooms',
+    BATHROOMS: 'Bathrooms',
+    NUMBER_OF_GUESTS: 'Number of guests',
+    RATING: 'Rating',
+    FEATURES: ["Top Villa", "Self CheckIn", "Free Reschedule"],
 
-        
-    },
 
-    SEARCH:{
-        DESTINATION: 'Destination',
-        CHECK_IN: 'Check-in Date',
-        CHECK_OUT: 'Check-out Date',
-        GUESTS: 'Guests',
-        SEARCH: 'Search',
-    },
+  },
 
-    ERROR_MESSAGES: {
-        REQUIRED_FIELD: 'This field is required.',
-        INVALID_EMAIL: 'Please enter a valid email address.',
-    },
+  SEARCH: {
+    DESTINATION: 'Destination',
+    CHECK_IN: 'Check-in Date',
+    CHECK_OUT: 'Check-out Date',
+    GUESTS: 'Guests',
+    SEARCH: 'Search',
+  },
 
-    SUCCESS_MESSAGES: {
-        ITEM_ADDED: 'Item successfully added to cart.',
-        ITEM_UPDATED: 'Item successfully updated.',
-    },
+  ERROR_MESSAGES: {
+    REQUIRED_FIELD: 'This field is required.',
+    INVALID_EMAIL: 'Please enter a valid email address.',
+  },
 
-    EXPLORE:{
-        APARTMENTS_IN_DUBAI: 'Apartments in Dubai',
-        APARTMENTS_IN_NEWYORK: 'Apartments in New York',
-        APARTMENTS_IN_SPAIN: 'Apartments in Spain',
-        APARTMENTS_IN_INDONESIA: 'Apartments in Indonesia',
-    },
+  SUCCESS_MESSAGES: {
+    ITEM_ADDED: 'Item successfully added to cart.',
+    ITEM_UPDATED: 'Item successfully updated.',
+  },
 
-    COMPANY:{
-        ABOUT_US:'About Us',
-        BLOG:'Blog',
-        CAREER: 'Career',
-        CUSTOMERS:'Customers',
-        BRAND:'Brand',
-    },
+  EXPLORE: {
+    APARTMENTS_IN_DUBAI: 'Apartments in Dubai',
+    APARTMENTS_IN_NEWYORK: 'Apartments in New York',
+    APARTMENTS_IN_SPAIN: 'Apartments in Spain',
+    APARTMENTS_IN_INDONESIA: 'Apartments in Indonesia',
+  },
 
-    HELP:{
-        SUPPORT: 'Support',
-        CANCEL_BOOKING: 'Cancel Booking',
-        REFUNDS_PROCESS: 'Refunds Process',
-    },
+  COMPANY: {
+    ABOUT_US: 'About Us',
+    BLOG: 'Blog',
+    CAREER: 'Career',
+    CUSTOMERS: 'Customers',
+    BRAND: 'Brand',
+  },
 
-    FOOTER: {
-        TERMS_OF_SERVICE: 'Terms of Service',
-        POLICY_SERVICE: 'Policy Service',
-        COOKIES_POLICY: 'Cookies Policy',
-        PARTNERS: 'Partners',
-    },
+  HELP: {
+    SUPPORT: 'Support',
+    CANCEL_BOOKING: 'Cancel Booking',
+    REFUNDS_PROCESS: 'Refunds Process',
+  },
 
-   
-    PROPERTY_CATEGORIES: [
-        { label: 'Rooms', icon: 'rooms' },
-        { label: 'Mansion', icon: 'mansion' },
-        { label: 'Countryside', icon: 'countryside' },
-        { label: 'Villa', icon: 'villa' },
-        { label: 'Tropical', icon: 'tropical' },
-        { label: 'New', icon: 'new' },
-        { label: 'Amazing pool', icon: 'pool' },
-        { label: 'Beach house', icon: 'beach-house' },
-        { label: 'Island', icon: 'island' },
-        { label: 'Camping', icon: 'camping' },
-        { label: 'Apartment', icon: 'apartment' },
-        { label: 'House', icon: 'house' },
-        { label: 'Lakefront', icon: 'lakefront' },
-        { label: 'Farm house', icon: 'farm-house' },
-        { label: 'Treehouse', icon: 'treehouse' },
-        { label: 'Cabins', icon: 'cabins' },
-        { label: 'Castles', icon: 'castles' },
-        { label: 'Lakeside', icon: 'lakeside', disabled: true },
-    ]
+  FOOTER: {
+    TERMS_OF_SERVICE: 'Terms of Service',
+    POLICY_SERVICE: 'Policy Service',
+    COOKIES_POLICY: 'Cookies Policy',
+    PARTNERS: 'Partners',
+  },
+
+
+  PROPERTY_CATEGORIES: [
+    { label: 'Rooms', icon: 'rooms' },
+    { label: 'Mansion', icon: 'mansion' },
+    { label: 'Countryside', icon: 'countryside' },
+    { label: 'Villa', icon: 'villa' },
+    { label: 'Tropical', icon: 'tropical' },
+    { label: 'New', icon: 'new' },
+    { label: 'Amazing pool', icon: 'pool' },
+    { label: 'Beach house', icon: 'beach-house' },
+    { label: 'Island', icon: 'island' },
+    { label: 'Camping', icon: 'camping' },
+    { label: 'Apartment', icon: 'apartment' },
+    { label: 'House', icon: 'house' },
+    { label: 'Lakefront', icon: 'lakefront' },
+    { label: 'Farm house', icon: 'farm-house' },
+    { label: 'Treehouse', icon: 'treehouse' },
+    { label: 'Cabins', icon: 'cabins' },
+    { label: 'Castles', icon: 'castles' },
+    { label: 'Lakeside', icon: 'lakeside', disabled: true },
+  ]
 }
 
 
-export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
+export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
-   
+
     name: "Villa Ocean Breeze",
     address: {
       state: "Seminyak",
@@ -130,62 +130,62 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image7.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png",
-       "/assets/image6.png"
-    ]
-  },
-    discount: "",
-    description: "A luxurious villa with a beautiful pool and ocean breeze, perfect for families or groups seeking relaxation in Bali.",
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png",
+        "/assets/image6.png"
+      ]
+    },
+    discount: "",  
+    description: "Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in the hot tub, and gazing out over incredible ocean views",
     bedrooms: 3,
     bathrooms: 3,
     number_of_guests: "6",
     features: ["Luxury Villa", "Pool", "Free Parking"],
     reviews: [
-      {
-        user: "Alice",
-        date: "2023-02-20",
-        period: "2 years on ALX",
-        trip:"Family Trip",
-        avatar: "/assets/avatar.png",
-        rating: 5,
-        comment: "Amazing villa, beautiful pool and great service!"
-      },
-      {
-        user: "Bob",
-        avatar: "/assets/avatar.png",
-        rating: 4,
-        comment: "Very comfortable and clean. Would stay again.",
-        date: "2023-01-15",
-        period: "3 years on ALX",
-        trip: "Family trip"
-      },
-        {
-    user: "Bob",
-     date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
-  
-    avatar: "/assets/avatar.png",
-    rating: 4,
-    comment: "Very comfortable and clean. Would stay again."
-  },
-    {
-    user: "Bob",
-     date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
-    avatar: "/assets/avatar.png",
-    rating: 4,
-    comment: "Very comfortable and clean. Would stay again."
-  }
+{
+  user: "Kerry",
+  date: "2023-03-10",
+  period: "1 year on ALX",
+  trip: "Romantic Getaway",
+  avatar: "/assets/avatar.png",
+  rating: 5,
+  comment: "Amazing villa! The pool was sparkling clean and refreshing. The service exceeded our expectations—friendly staff, quick responses, and attention to detail. The ambiance was peaceful and perfect for our family getaway. Everything was spotless and beautifully maintained. We truly felt at home and will definitely return again in the future!"
+},
+{
+  user: "Pooja",
+  avatar: "/assets/avatar1.png",
+  rating: 4,
+  comment: "The place was clean, well-furnished, and very comfortable for our family. The location was convenient and peaceful, and check-in was smooth. Staff were helpful and polite. We appreciated the amenities provided. Only downside was slow Wi-Fi at times. Overall, a great stay—we would happily book again for our next trip.",
+  date: "2023-01-15",
+  period: "3.5 years on ALX",
+  trip: "Girls' Weekend"
+},
+{
+  user: "Cindy & Ben",
+  date: "2023-04-05",
+  period: "2.5 years on ALX",
+  trip: "Anniversary Celebration",
+  avatar: "/assets/avatar2.png",
+  rating: 4,
+  comment: "The property was very clean and cozy. We loved how spacious and well-lit everything was. The host was responsive and welcoming. It felt like a home away from home. Just a little improvement needed with kitchen utensils, but overall, a relaxing and pleasant experience. We’d definitely recommend it to others."
+},
+{
+  user: "Marnie",
+  date: "2023-05-12",
+  period: "1.8 years on ALX",
+  trip: "Workcation",
+  avatar: "/assets/avatar3.png",
+  rating: 4,
+  comment: "What a great place to stay! Clean, nicely decorated, and peaceful. We had everything we needed and enjoyed family time by the pool. The area was quiet and safe, with shops nearby. The only issue was the shower pressure. But still, it was a lovely experience we won’t forget."
+}
+      
     ]
   },
   {
-    
+
     name: "Mountain Escape Chalet",
     address: {
       state: "Aspen",
@@ -202,13 +202,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image15.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "30",
     description: "A cozy mountain chalet in Aspen with stunning views, a fireplace, and easy self check-in for ski lovers.",
@@ -219,9 +219,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Charlie",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar3.png",
         rating: 5,
         comment: "Perfect for a ski trip. Loved the fireplace!"
@@ -229,7 +229,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Cozy Desert Retreat",
     address: {
       state: "Palm Springs",
@@ -246,13 +246,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image8.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "",
     description: "A charming desert retreat with stunning views, perfect for couples or small families. Enjoy the tranquility and beauty of the desert landscape.",
@@ -263,9 +263,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Dana",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar4.png",
         rating: 5,
         comment: "Charming and peaceful. Loved the desert views!"
@@ -273,7 +273,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
- 
+
     name: "City Lights Penthouse",
     address: {
       state: "New York",
@@ -290,13 +290,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image2.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "15",
     description: "Experience the vibrant city life in this modern penthouse with breathtaking views of the New York skyline. Ideal for couples or business travelers.",
@@ -307,9 +307,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Eve",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar5.png",
         rating: 4,
         comment: "Amazing view and location. Would recommend!"
@@ -317,7 +317,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Riverside Cabin",
     address: {
       state: "Queenstown",
@@ -334,13 +334,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image2.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "20",
     description: "Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming and paddleboarding... [Trimmed for clarity]",
@@ -351,9 +351,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Frank",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar6.png",
         rating: 5,
         comment: "Kayaks were a fun bonus. Peaceful location."
@@ -361,7 +361,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Modern Beachfront Villa",
     address: {
       state: "Sidemen",
@@ -378,13 +378,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image4.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "",
     description: "A stunning beachfront villa with private pool and chef service. Ideal for large families or groups seeking a luxurious getaway.",
@@ -395,9 +395,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Grace",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar7.png",
         rating: 5,
         comment: "The chef service was fantastic. Beautiful villa!"
@@ -405,7 +405,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Lakeside Chalet",
     address: {
       state: "Banff",
@@ -422,13 +422,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image5.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
     discount: "10",
     description: "A beautiful lakeside chalet with stunning mountain views and access to hiking trails. Perfect for outdoor enthusiasts.",
     bedrooms: 3,
@@ -438,9 +438,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Hannah",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar8.png",
         rating: 5,
         comment: "Loved the hiking trails and the view!"
@@ -448,7 +448,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Tropical Garden Villa",
     address: {
       state: "Koh Samui",
@@ -465,13 +465,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image6.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "25",
     description: "A tropical villa surrounded by lush gardens, offering a serene escape with free parking and self check-in.",
@@ -482,9 +482,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Ivan",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar9.png",
         rating: 5,
         comment: "Beautiful gardens and easy check-in."
@@ -492,7 +492,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Urban Loft",
     address: {
       state: "Berlin",
@@ -509,13 +509,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image7.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "",
     description: "A stylish urban loft in the heart of Berlin, featuring modern amenities, free WiFi, and 24-hour check-in.",
@@ -526,9 +526,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Julia",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar10.png",
         rating: 4,
         comment: "Great location and amenities."
@@ -536,7 +536,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Secluded Forest Cabin",
     address: {
       state: "Whistler",
@@ -553,15 +553,15 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image8.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
-  
+
     description: "A secluded cabin in the forest with a hot tub and self check-in. Ideal for a relaxing retreat in nature.",
     bedrooms: 4,
     bathrooms: 2,
@@ -570,9 +570,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Kevin",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar11.png",
         rating: 5,
         comment: "Hot tub was a highlight. Very peaceful."
@@ -580,7 +580,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Cliffside Villa",
     address: {
       state: "Amalfi",
@@ -597,13 +597,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image9.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "50",
     description: "An exquisite cliffside villa with an infinity pool and breathtaking sea views. Perfect for a luxurious getaway.",
@@ -614,9 +614,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Liam",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar12.png",
         rating: 5,
         comment: "Infinity pool and views were amazing!"
@@ -624,7 +624,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Coastal Escape Villa",
     address: {
       state: "Noosa",
@@ -641,13 +641,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image18.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "",
     description: "A beachfront villa in Noosa with pet-friendly policies and free parking. Ideal for families and pets.",
@@ -658,9 +658,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Mia",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar13.png",
         rating: 5,
         comment: "Perfect for our family and dog!"
@@ -668,7 +668,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Historical Villa",
     address: {
       state: "Florence",
@@ -685,13 +685,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image17.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "35",
     description: "A charming historical villa in Tuscany with free breakfast and self check-in. Experience the beauty of the Italian countryside.",
@@ -702,9 +702,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Nina",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar14.png",
         rating: 5,
         comment: "Loved the breakfast and the history!"
@@ -712,7 +712,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Downtown Apartment",
     address: {
       state: "Tokyo",
@@ -729,13 +729,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     image: "/assets/image16.png",
     images: {
-    main: "/assets/image2.png",
-    others: [
-      "/assets/image3.png",
-      "/assets/image4.png",
-      "/assets/image5.png"
-    ]
-  },
+      main: "/assets/image2.png",
+      others: [
+        "/assets/image3.png",
+        "/assets/image4.png",
+        "/assets/image5.png"
+      ]
+    },
 
     discount: "",
     description: "A modern apartment in downtown Tokyo, close to public transport and major attractions. Ideal for city explorers.",
@@ -746,9 +746,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Oscar",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar15.png",
         rating: 4,
         comment: "Convenient location, clean and modern."
@@ -756,7 +756,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Luxury Safari Lodge",
     address: {
       state: "Serengeti",
@@ -781,9 +781,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Priya",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar16.png",
         rating: 5,
         comment: "Safari tours were unforgettable!"
@@ -791,7 +791,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Countryside Cottage",
     address: {
       state: "Cotswolds",
@@ -816,9 +816,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Quinn",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar17.png",
         rating: 5,
         comment: "Fireplace made it so cozy!"
@@ -826,7 +826,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Riverfront Mansion",
     address: {
       state: "Paris",
@@ -851,9 +851,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Rosa",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar18.png",
         rating: 5,
         comment: "Beautiful garden and river views."
@@ -861,7 +861,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Ski Chalet",
     address: {
       state: "Zermatt",
@@ -886,9 +886,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Sam",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar19.png",
         rating: 5,
         comment: "Perfect for skiing. Warm and inviting."
@@ -896,7 +896,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-   
+
     name: "Island Paradise Villa",
     address: {
       state: "Mahe",
@@ -921,9 +921,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Tina",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar20.png",
         rating: 5,
         comment: "Absolute paradise. Chef was amazing!"
@@ -931,7 +931,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     ]
   },
   {
-  
+
     name: "Clifftop Retreat",
     address: {
       state: "Cape Town",
@@ -956,9 +956,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     reviews: [
       {
         user: "Uma",
-         date: "2023-02-20",
- period: "2 years on ALX",
- trip:"Family Trip",
+        date: "2023-02-20",
+        period: "2 years on ALX",
+        trip: "Family Trip",
         avatar: "/assets/avatar21.png",
         rating: 5,
         comment: "Spectacular views and very private."

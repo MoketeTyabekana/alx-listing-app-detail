@@ -78,10 +78,10 @@ export default function Home() {
             title={property.name}
             price_perNight={property.price}
             city={property.address.city}
-            image={property.image}
-            bedrooms={Number(property.offers.bed)}
-            bathrooms={Number(property.offers.shower)}
-            number_of_guests={property.offers.occupants}
+            image={property.image ?? ""}
+            bedrooms={Number(property.offers?.bed)}
+            bathrooms={Number(property.offers?.shower)}
+            number_of_guests={property.offers?.occupants ?? ""}
             rating={property.rating}
             features={property.category}
           />
