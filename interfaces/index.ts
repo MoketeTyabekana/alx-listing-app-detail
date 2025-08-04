@@ -35,7 +35,7 @@ export interface Address {
 
 
 export interface PropertyProps {
-  id: number | string;
+ 
   name: string;
   price: number;
   rating: number;
