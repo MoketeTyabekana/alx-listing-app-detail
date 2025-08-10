@@ -8,7 +8,8 @@ export default function PropertyPage() {
   const router = useRouter();
   const { id } = router.query;
 
-  const property = PROPERTYLISTINGSAMPLE.find((item) => item.id === id);
+  const property = PROPERTYLISTINGSAMPLE.find((item) => String(item.id) === String(id));
+  
 
   if (!property) return <p>Property not found</p>;
 

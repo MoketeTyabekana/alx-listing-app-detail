@@ -128,7 +128,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-6"
     },
-    image: "/assets/image7.png",
+    image: "/assets/main.png",
     images: {
       main: "/assets/image2.png",
       others: [
@@ -185,7 +185,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     ]
   },
   {
-
+    id: "1",
     name: "Mountain Escape Chalet",
     address: {
       state: "Aspen",

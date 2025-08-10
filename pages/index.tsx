@@ -3,9 +3,12 @@ import { BACKGROUND_IMAGE, BUTTON_TEXT } from "@/constants/index";
 import Button from "@/components/common/Button";
 import Card from "@/components/common/Card";
 import { PROPERTYLISTINGSAMPLE } from "@/constants/index";
+import { useRouter } from "next/router";
 
 
 export default function Home() {
+const router = useRouter(); 
+
   return (
     <main className="lg:px-10 px-2 overflow-x-none">
       <section
@@ -71,19 +74,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full  py-6 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
+      <section className="  w-full  py-6 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
         {PROPERTYLISTINGSAMPLE.map((property, index) => (
           <Card
             key={index}
+            id={property.id}
             title={property.name}
             price_perNight={property.price}
             city={property.address.city}
-            image={property.image ?? ""}
-            bedrooms={Number(property.offers?.bed)}
-            bathrooms={Number(property.offers?.shower)}
-            number_of_guests={property.offers?.occupants ?? ""}
+            image={property.image}
+            bedrooms={property.bedrooms}
+            bathrooms={property.bathrooms}
+            number_of_guests={property.number_of_guests}
             rating={property.rating}
-            features={property.category}
+            features={property.features}
+            
           />
         ))}
       </section>

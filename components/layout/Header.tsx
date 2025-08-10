@@ -60,6 +60,8 @@ export default function Header() {
 
    const router = useRouter();
 
+  // Check if current page is property detail page
+  const isPropertyDetailPage = router.pathname === '/property/[id]';
 
   return (
     <header className="w-full">
@@ -176,42 +178,42 @@ export default function Header() {
                 label={BUTTON_TEXT.signIn}
                 variant="primary"
                 onClick={() => router.push('/signIn')}
-
               />
               <Button
                 label={BUTTON_TEXT.signUp}
                 variant="secondary"
                 onClick={() => router.push('/signUp')}
-
               />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Accommodation Types */}
-      <div className="flex justify-between bg-white border-b border-gray-200 px-10">
-        <div className=" mx-auto px-4 py-4">
-          <div className="flex items-center gap-8 overflow-auto no-scrollbar">
-            {accommodationTypes.map((type) => (
-              <button
-                key={type.id}
-                onClick={() => setSelectedType(type.id)}
-                className={`flex flex-col items-center gap-2 min-w-0 flex-shrink-0 p-2  transition-colors ${
-                  selectedType === type.id
-                    ? "text-gray-900 border-b-2 border-gray-600"
-                    : "text-gray-600 hover:text-gray-900"
-                }`}
-              >
-                <type.icon className="h-4 w-4" />
-                <span className="text-xs font-small whitespace-nowrap">
-                  {type.label}
-                </span>
-              </button>
-            ))}
+      {/* Accommodation Types - Hide on property detail page */}
+      {!isPropertyDetailPage && (
+        <div className="accomodations flex justify-between bg-white border-b border-gray-200 px-10">
+          <div className=" mx-auto px-4 py-4">
+            <div className="flex items-center gap-8 overflow-auto no-scrollbar">
+              {accommodationTypes.map((type) => (
+                <button
+                  key={type.id}
+                  onClick={() => setSelectedType(type.id)}
+                  className={`flex flex-col items-center gap-2 min-w-0 flex-shrink-0 p-2  transition-colors ${
+                    selectedType === type.id
+                      ? "text-gray-900 border-b-2 border-gray-600"
+                      : "text-gray-600 hover:text-gray-900"
+                  }`}
+                >
+                  <type.icon className="h-4 w-4" />
+                  <span className="text-xs font-small whitespace-nowrap">
+                    {type.label}
+                  </span>
+                </button>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

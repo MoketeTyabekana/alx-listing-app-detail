@@ -22,10 +22,10 @@ const ReviewCard: React.FC<{review:Review}> = ({review }) => {
       </div>
     </div>
     <div className="flex space-x-2 items-center">
-      <p className="text-gray-600">{review.date}</p>
+      <p className="text-gray-600 text-se">{review.date}</p>
       <p className="text-gray-500">{review.trip}</p>
     </div>
-    <p className=" ">{review.comment}</p>
+    <p className=" text-justify">{review.comment}</p>
   </div>
     </>
   );

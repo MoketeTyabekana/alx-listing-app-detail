@@ -1,4 +1,5 @@
 export interface CardProps {
+  id: string | number; // Add this line
   title: string;
   price_perNight: number;
   city: string;
@@ -8,6 +9,7 @@ export interface CardProps {
   number_of_guests: string; // change to string if you want to allow "2-3"
   rating: number;
   features: string[];
+  onClick?: () => void;
 }
 
 export interface ButtonProps {
@@ -48,7 +50,7 @@ export interface Review {
 
 
 export interface PropertyProps {
- 
+ id?:number | string;
   name: string;
   price: number;
   rating: number;
@@ -72,6 +74,7 @@ export interface PropertyProps {
   offers?: Offers;
   image?: string; 
   // published:Date;
+
 }
 
 
