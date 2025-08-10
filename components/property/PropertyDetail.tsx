@@ -1,8 +1,10 @@
 import { PropertyProps } from "@/interfaces/index";
 import Image from "next/image";
-import { Star, MapPin, Heart, Share, Bed, BathIcon, User, Users } from "lucide-react";
+import { Star, MapPin, Heart, Share, Bed, BathIcon, Users } from "lucide-react";
 import Button from "../common/Button";
 import { BUTTON_TEXT } from "@/constants";
+import Link from "next/link";
+import { Offers } from '../../interfaces/index';
 
 const PropertyDetail: React.FC<{ property: PropertyProps }> = ({
   property,
@@ -92,6 +94,31 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({
 
       {/* Description */}
       <div className="mt-4">
+        <div className="flex justify-between border-b-1 border-gray-500 py-4"> 
+          <nav>
+            <ul className="flex space-x-4">
+              <li>
+                <Link href={`/property/${property.id}`} className="text-blue-600 hover:underline">
+                  Description
+                </Link>
+              </li>
+              <li>
+                <Link href={`/property/${property.id}/reviews`} className="text-blue-600 hover:underline">
+                  What we offer
+                </Link>
+              </li>
+              <li>
+                <Link href={`/property/${property.id}/location`} className="text-blue-600 hover:underline">
+                  Location
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <p>
+            Published
+          </p>
+        </div>
         <h2 className="text-2xl font-semibold">Description</h2>
         <p>{property.description}</p>
       </div>

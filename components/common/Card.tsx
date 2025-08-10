@@ -81,17 +81,3 @@ const Card = ({
 
 export default Card;
 
-/* Usage Example:
-<Card
-  id={property.id}
-  title={property.name}
-  price_perNight={property.price}
-  city={property.address.city}
-  image={property.image}
-  bedrooms={property.bedrooms}
-  bathrooms={property.bathrooms}
-  number_of_guests={property.number_of_guests}
-  rating={property.rating}
-  features={property.features}
-/>
-*/
