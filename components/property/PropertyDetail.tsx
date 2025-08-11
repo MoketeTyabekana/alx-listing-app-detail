@@ -1,10 +1,8 @@
 import { PropertyProps } from "@/interfaces/index";
 import Image from "next/image";
 import { Star, MapPin, Heart, Share, Bed, BathIcon, Users } from "lucide-react";
-import Button from "../common/Button";
 import { BUTTON_TEXT } from "@/constants";
 import Link from "next/link";
-import { Offers } from '../../interfaces/index';
 
 const PropertyDetail: React.FC<{ property: PropertyProps }> = ({
   property,
@@ -90,52 +88,56 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({
           <Users className="w-5 h-5 mr-2" /> {property.number_of_guests} Guests
         </span>
       </div>
-
-
-      {/* Description */}
-      <div className="mt-4">
-        <div className="flex justify-between border-b-1 border-gray-500 py-4"> 
-          <nav>
-            <ul className="flex space-x-4">
-              <li>
-                <Link href={`/property/${property.id}`} className="text-blue-600 hover:underline">
-                  Description
-                </Link>
-              </li>
-              <li>
-                <Link href={`/property/${property.id}/reviews`} className="text-blue-600 hover:underline">
-                  What we offer
-                </Link>
-              </li>
-              <li>
-                <Link href={`/property/${property.id}/location`} className="text-blue-600 hover:underline">
-                  Location
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          <p>
-            Published
-          </p>
-        </div>
-        <h2 className="text-2xl font-semibold">Description</h2>
-        <p>{property.description}</p>
-      </div>
-
-      {/* Amenities */}
-      <div className="mt-4">
-        <h2 className="text-2xl font-semibold">What this place offers</h2>
-        <ul className="flex flex-wrap space-x-4">
-          {property.category?.map((amenity: string, index: number) => (
-            <li key={index} className="bg-gray-200 p-2 rounded-md">
-              {amenity}
-            </li>
-          ))}
-        </ul>
-      </div>
+    </div>
+  );
+};
+ 
+const Description: React.FC<{property:PropertyProps}> = ({ property }) => {
+  return (
+    <div className="mt-4 flex-3/5">
+       {/* Description */}
+ <div >
+   <div className="flex justify-between border-y-1 border-gray-500 py-4"> 
+     <nav>
+       <ul className="flex space-x-4">
+         <li>
+           <Link href={`/property/${property.id}`} className="text-blue-600 hover:underline">
+             Description
+           </Link>
+         </li>
+         <li>
+           <Link href={`/property/${property.id}/reviews`} className="text-blue-600 hover:underline">
+             What we offer
+           </Link>
+         </li>
+         <li>
+           <Link href={`/property/${property.id}/location`} className="text-blue-600 hover:underline">
+             Location
+           </Link>
+         </li>
+       </ul>
+     </nav>
+     <p>
+       Published
+     </p>
+   </div>
+   <h2 className="text-2xl font-semibold">Description</h2>
+   <p>{property.description}</p>
+ </div>
+ {/* Amenities */}
+ <div className="mt-4">
+   <h2 className="text-2xl font-semibold">What this place offers</h2>
+   <ul className="flex flex-wrap space-x-4">
+     {property.category?.map((amenity: string, index: number) => (
+       <li key={index} className="bg-gray-200 p-2 rounded-md">
+         {amenity}
+       </li>
+     ))}
+   </ul>
+ </div>
     </div>
   );
 };
 
 export default PropertyDetail;
+export { Description };
